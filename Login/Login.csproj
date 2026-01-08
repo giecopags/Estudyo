@@ -1,0 +1,273 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25C1CEA8-1BFD-4B84-A515-A22D8D48BF9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v23.2" />
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2" />
+    <Reference Include="DevExpress.Data.v23.2" />
+    <Reference Include="DevExpress.Utils.v23.2" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core" />
+    <Reference Include="DevExpress.Utils.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.UI, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v23.2.Wizard, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.2" />
+    <Reference Include="DevExpress.Printing.v23.2.Core" />
+    <Reference Include="DevExpress.Drawing.v23.2" />
+    <Reference Include="DevExpress.XtraGrid.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".Designer.cs" />
+    <Compile Include="Achievements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Achievements.Designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.Designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.cs">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crude.Designer.cs">
+      <DependentUpon>Crude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudyoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstudyoAdmin.Designer.cs">
+      <DependentUpon>EstudyoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudyoMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstudyoMain.Designer.cs">
+      <DependentUpon>EstudyoMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaderBoards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeaderBoards.Designer.cs">
+      <DependentUpon>LeaderBoards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainPanel.Designer.cs">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Teacher.cs" />
+    <Compile Include="pConfirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pConfirmation.Designer.cs">
+      <DependentUpon>pConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="questionEdit1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="questionEdit1.Designer.cs">
+      <DependentUpon>questionEdit1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDatabase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegisterDatabase.Designer.cs">
+      <DependentUpon>RegisterDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shop.Designer.cs">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="ucAdminSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminSubject.Designer.cs">
+      <DependentUpon>ucAdminSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucItem.Designer.cs">
+      <DependentUpon>ucItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMainProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMainProfile.Designer.cs">
+      <DependentUpon>ucMainProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs" />
+    <EmbeddedResource Include="Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crude.resx">
+      <DependentUpon>Crude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudyoAdmin.resx">
+      <DependentUpon>EstudyoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudyoMain.resx">
+      <DependentUpon>EstudyoMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaderBoards.resx">
+      <DependentUpon>LeaderBoards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPanel.resx">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pConfirmation.resx">
+      <DependentUpon>pConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="questionEdit1.resx">
+      <DependentUpon>questionEdit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterDatabase.resx">
+      <DependentUpon>RegisterDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop.resx">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminSubject.resx">
+      <DependentUpon>ucAdminSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucItem.resx">
+      <DependentUpon>ucItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMainProfile.resx">
+      <DependentUpon>ucMainProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Downloads\EstudyoExam 5-28-2024\EstudyoExam 5-9-2024\QuizAppAttemp2\QuizAppAttemp2\QuizAppAttemp2 5-28-2024.csproj">
+      <Project>{c55639ba-8456-4827-b06b-c2cf571faa93}</Project>
+      <Name>QuizAppAttemp2 5-28-2024</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
