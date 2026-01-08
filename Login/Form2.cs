@@ -69,6 +69,7 @@ namespace Login
             }
         }
 
+        //Revise this method
         private bool ValidateUser(string username, string password)
         {
             string connectionString = @"Data Source=PAGALING\SQLEXPRESS;Initial Catalog=dbRegistration;Integrated Security=True;Pooling=true;";
